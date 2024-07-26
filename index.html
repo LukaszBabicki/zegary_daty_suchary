@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zegary, Daty i Suchary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column" id="left-column">
+            <h2>Suchary</h2>
+            <div id="joke-container">
+                <div id="joke"></div>
+            </div>
+            <button id="joke-button" onclick="fetchJoke()">Pokaż Suchara</button>
+        </div>
+        <div class="column" id="center-column">
+            <h2>Zegary</h2>
+            <div id="clock"></div>
+            <div id="dates"></div>
+            <div id="analog-clocks">
+                <canvas id="local-clock" width="150" height="150"></canvas>
+                <canvas id="utc-clock" width="150" height="150"></canvas>
+            </div>
+            <div id="footer-container">
+                <p id="footer">daj Pan trzy, bądź Pan człowiek</p>
+            </div>
+        </div>
+        <div class="column" id="right-column">
+            <h2>Ping do wp.pl</h2>
+            <div id="ping-container">
+                <pre id="ping-output"></pre>
+                <button onclick="startPing()">Start</button>
+                <button onclick="stopPing()">Stop</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
